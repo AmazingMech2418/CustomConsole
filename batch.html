@@ -1,6 +1,6 @@
 <script>
-var code=`:top&SET mypath=%cd%&ECHO %mypath%&ECHO Enter command:&SET /p variablenumberone=&%variablenumberone%&GOTO top`;
-  var c = `@ECHO off&COLOR `+prompt('Enter Color. Examples are 0f (black, white), 70 (white, black), 80 (grey, black), and 1f (blue, white)')+`&`
+var code=`:top ^T SET mypath=%cd% ^T ECHO %mypath% ^T ECHO Enter command: ^T SET /p variablenumberone= ^T %variablenumberone% ^T GOTO top`;
+  var c = `@ECHO off ^T COLOR `+prompt('Enter Color. Examples are 0f (black, white), 70 (white, black), 80 (grey, black), and 1f (blue, white)')+` ^T `
   var download = function(p1,p2) {
   var el = document.createElement("A");
   el.setAttribute("href","data:application,"+p1);
